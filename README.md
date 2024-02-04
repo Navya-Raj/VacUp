@@ -30,6 +30,18 @@ Welcome to VacUp - your proactive healthcare companion! VacUp is a comprehensive
 7. **Emergency Services Locator:** Find nearby hospitals, pharmacies, and clinics.
 8. **Health Education Resources:** Informative content to educate users about vaccinations and overall health.
 
+##Technology Stack##
+
+VacUp is built using the following technologies:
+
+HTML, CSS, JavaScript for the frontend
+Node.js and Express for the backend
+Botpress for chatbot
+Spline for 3D Graphics
+MongoDB for the database
+Firebase for authentication
+AWS for cloud services
+
 
 ## Getting Started
 
