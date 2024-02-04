@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* NAVBAR */
+nav{
+    margin: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    color: #12263A;
+    /* padding: 10px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    top: 0;
+    z-index: 5;
+}
+.logo{
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    .brandname{
+        height: 50px;
+        width: 100px;
+        background-image: url(logo.png);
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    a{
+        font-weight: 900;
+        font-size: larger;
+        font-style: normal;
+        text-decoration: none;
+        color: #12263A;
+    }
+    i{
+        font-size: 28px;
+        margin-right: 10px;
+    }
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 5px;
+    margin-right: 30px;
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    li{
+        transition: all .3s ease;
+        cursor: pointer;
+        width: auto;
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+nav ul li:hover{
+    background-color: #12263A;
+    color: #F4EDEA;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color:#F4EDEA;
+    margin: 0;
+    padding: 0;
+}
+
+.event-container {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    h1{
+        color: #12263A;
+        font-size: 3.5em;
+        margin: 10px;
+    }
+}
+
+.event {
+    background-color:#12263A;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%; /* Adjust the width to your preference */
+    /* max-width: 600px; */
+}
+
+.page-title h1 {
+    text-align: center;
+    font-size: 3.5em;
+    color: #12263A;
+    margin-bottom: 10px;
+  }
+  
+  .page-title p {
+    text-align: center;
+    font-size: 1.8em;
+    color: rgba(18, 38, 58, 0.7);;
+  }
+/* Rest of your CSS remains unchanged */
+
+h2 {
+    color: #06BCC1;
+}
+
+p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline;
+    margin-bottom: 5px;
+    color: #06BCC1;
+}
+
+input, select, textarea {
+    outline: none;
+    display: inline;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #06BCC1;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #06BCC1;
+}
+.google-map {
+    height: 300px;
+    position: relative;
+    margin: 10px;
+}
+
+.google-map iframe {
+    height: 70%;
+    width: 50%;
+    left: 0;
+    top: 0;
+    
+    
+    position: absolute;
+}
+.map-container {
+    width: 100%;
+    height: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    background-color: #12263A;
+    color: #F4EDEA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 20px;
+    i{
+        color: #06BCC1;
+        font-size: 36px;
+    }
+}

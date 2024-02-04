@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="3d">
+        <iframe src='https://my.spline.design/untitled-b35d1fdf55afd0c168a7aa96970493cc/' frameborder='0' allowfullscreen="true"></iframe>
+    </div>
+    <section>
+        <div class="container">
+            <div class="card front">
+                <div class="head">
+                    <h2>Log In</h2>
+                </div>
+                <form action="#">
+                    <div class="input">
+                        <div class="logo">
+                            <i class='bx bxs-user'></i>
+                        </div>
+                        <div class="form">
+                            <input type="text" class="fill" placeholder="Username" required>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div class="logo">
+                            <i class='bx bxs-lock-alt' ></i>
+                        </div>
+                        <div class="form">
+                            <input type="text" class="fill" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <a href="#">Forgot Password?</a>
+                    <div class="foot">
+                        <button onclick="bookNow()" class="btn">Log In</button>
+                        <span>Dont have an account? <a href="#">Sign Up</a></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="card back">
+                <div class="head">
+                    <h2>Sign Up</h2>
+                </div>
+                <form action="#">
+                    <div class="top">
+                        <!-- Username -->
+                        <div class="input">
+                            <div class="logo">
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="form">
+                                <input type="text" class="fill" placeholder="Username" required>
+                            </div>
+                        </div>
+                        <!-- Name -->
+                        <div class="input">
+                            <div class="logo">
+                                <i class='bx bxs-user'></i>
+                            </div>
+                            <div class="form">
+                                <input type="text" class="fill" placeholder="Name" name="name" required>
+                            </div>
+                        </div>
+            
+                        <!-- Gender Dropdown -->
+                        <div class="input">
+                            <div class="logo">
+                                <i class='bx bx-male-female' ></i>
+                            </div>
+                            <div class="form">
+                                <select class="fill" name="gender" required>
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+            
+                        <!-- Age (DOB Selector) -->
+                        <div class="input">
+                            <div class="logo">
+                                <i class='bx bxs-calendar-alt'></i>
+                            </div>
+                            <div class="form">
+                                <input type="date" class="fill" placeholder="Date of Birth" name="dob" required>
+                            </div>
+                        </div>
+            
+                        <!-- Email -->
+                        <div class="input">
+                            <div class="logo">
+                                <i class='bx bxs-envelope'></i>
+                            </div>
+                            <div class="form">
+                                <input type="email" class="fill" placeholder="Email" name="email" required>
+                            </div>
+                        </div>
+            
+                        <!-- Password -->
+                        <div class="input">
+                            <div class="logo">
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <div class="form">
+                                <input type="password" class="fill" placeholder="Password" name="password" required>
+                            </div>
+                        </div>
+            
+                        <!-- Confirm Password -->
+                        <div class="input">
+                            <div class="logo">
+                                <i class='bx bxs-lock-alt'></i>
+                            </div>
+                            <div class="form">
+                                <input type="password" class="fill" placeholder="Confirm Password" name="confirmPassword" required>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="foot">
+                        <button onclick="bookNow()" class="btn">Sign Up</button>
+                        <span>Already have an account? <a href="#">Log In</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="login.js"></script>
+</body>
+</html>
