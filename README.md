@@ -34,14 +34,12 @@ Welcome to VacUp - your proactive healthcare companion! VacUp is a comprehensive
 
 VacUp is built using the following technologies:
 
-HTML, CSS, JavaScript for the frontend
-Node.js and Express for the backend
-Botpress for chatbot
-Spline for 3D Graphics
-MongoDB for the database
-Firebase for authentication
-AWS for cloud services
-
+- HTML, CSS, JavaScript for the frontend
+-Node.js and Express for the backend
+- Botpress for chatbot
+- Spline for 3D Graphics
+- MongoDB for the database
+- Firebase for authentication
 
 ## Getting Started
 
