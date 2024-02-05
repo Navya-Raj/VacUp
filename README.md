@@ -6,9 +6,9 @@ VacUp is your proactive healthcare companion, dedicated to ensuring accessible a
 
 - [About](#about)
 - [Key Features](#key-features)
+- [Technology Stack](#technology-stack)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## About
