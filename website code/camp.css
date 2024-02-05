@@ -1,0 +1,307 @@
+/* General styling for the body */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap');
+
+*{
+    font-family: 'Raleway', sans-serif;
+}
+body{
+    background-image: url(mesh-gradient.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styling for the h1 tag (page title) */
+h1 {
+    text-align: center;
+    padding: 20px;
+    background: #c5d8d1;
+    color: #12263A;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+nav{ margin:0; width: 100%; height: 60px; background-color: transparent; color: #12263A;  padding: 10px;  display: flex; justify-content: space-between; align-items: center;  position: fixed;  top: 0; z-index: 5; } .logo{ font-size: 22px; letter-spacing: 1px; margin-left: 30px; display: flex; align-items: center; .brandname{ height: 50px; width: 100px; background-image: url(logo.png); background-position: left center; background-repeat: no-repeat; background-size: contain; } a{ font-weight: 900; font-size: larger; font-style: normal; text-decoration: none; color: #12263A; } i{ font-size: 28px; margin-right: 10px; } } nav ul{ list-style: none; display: flex; gap: 5px; margin-right: 30px; a{ text-decoration: none; color: inherit; } li{ transition: all .3s ease; cursor: pointer; width: auto; padding: 10px; border-radius: 5px; } } nav ul li:hover{ background-color: #12263A; color: #F4EDEA; } 
+
+
+/* Styling for the pincode section */
+#pincode-section {
+    background: #12263a;
+    color: #fff;
+    padding: 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 120px auto;
+    max-width: 600px;
+}
+
+
+
+#pincode-section p {
+    margin: 20px 0;
+}
+
+#pincode {
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+#go {
+    background: #06bcc1;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+#go:hover {
+    background: #12263A;
+}
+.main {
+    margin-top: 5%;
+    margin-left: 15%;
+    font-size: 28px;
+    padding: 5px;
+    width: 68%;
+    height: 600px; /* Set a fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.main h2 {
+    color: #12263a;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.main .card {
+    background-color: #c5d8d1;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    height: auto;
+    margin-bottom: 20px;
+    padding: 10px 0 20px 50px;
+}
+
+.main .card table {
+    border: none;
+    font-size: 16px;
+    height: 270px;
+    width: 80%;
+}
+#main td{
+    padding: 5px;
+}
+
+.edit {
+    position: absolute;
+    color: #f4edea;
+    right: 14%;
+}
+
+/* Additional styles for the REMINDERS section */
+.main #reminders {
+    background-color: #f4edea;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.main #reminders p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#map {
+    /* Add your map styles here */
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);}
+/* End */
+/* ... previous CSS code ... */
+
+/* Additional styles for the map in the upcoming camps section */
+
+/* ... previous CSS code ... */
+
+/* Additional styles for the map image in the upcoming camps section */
+#camps #campMap {
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    margin-top: 5px;
+}
+#camps td {
+    padding: 5px 0; /* Add padding to each table cell */
+}
+
+#camps #campMap img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.card {
+    background-color: #f4edea;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: auto;
+    margin-bottom: 20px;
+    padding: 20px 0 20px 50px;
+}
+
+#calendar {
+    margin-top: 10px;
+}
+
+.calendar-month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.calendar-prev,
+.calendar-next {
+    cursor: pointer;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.calendar-table th,
+.calendar-table td {
+    border: 1px solid #c5d8d1;
+    padding: 8px;
+    text-align: center;
+}
+
+#map {
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#map img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.edit {
+    position: absolute;
+    color: #06bcc1;
+    right: 14%;
+}
+/* ... previous CSS code ... */
+
+.calendar-table td.marked-date {
+    background-color: #06bcc1; /* Blue color */
+    color: #fff; /* Text color */
+    font-weight: bold;
+}
+.abc{
+    margin-top: 70px;
+}
+
+
+.check-box {
+	transform: scale(2);
+    margin-top: 5px;
+}
+
+input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 20px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+input:checked[type="checkbox"] {
+    background: #06bcc1;
+}
+
+input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+input:checked[type="checkbox"]::after {
+    left: 50%;
+}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f4edea;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb {
+background: #c5d8d1;    border-radius: 50px;
+  }
+
+  /* Add this CSS to your existing stylesheet */
+
+/* Styles for the reminder section */
+/* Add this CSS to your existing stylesheet */
+
+/* Styles for the reminder section */
+.reminder-section {
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+/* Styles for the slider */
+#reminder-slider {
+    width: 5%; /* Decreased initial width */
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px; /* Decreased font size */
+    transition: width 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+
+
+/* Styles for the set reminder button */
+#set-reminder {
+    background-color: #12263A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+#set-reminder:hover {
+    background-color: #12263A;
+    font-size: 5px; /* Further decreased font size on hover */
+}
+

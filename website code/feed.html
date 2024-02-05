@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feed.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <div class="brandname"></div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="plan.html">Our Recomendation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <div class="main">
+        <div class="contact-section">
+            <h1> Let's Get in Touch </h1>
+            <p>Address: VPO UJWA, NEW DELHI</p>
+            <p>Phone: 70659*****</p>
+            <p>Email: k******@gmail.com</p>
+        </div>
+    
+        <div class="feedback-section">
+            <h1>Feedback Form</h1>
+            <form id="feedbackForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <div class="Rating">Rating:</div>
+                <div class="Rating" id="Rating">
+                    <!-- Filled star icons for the rating -->
+                    <span class="star" onclick="setRating(1)">★</span>
+                    <span class="star" onclick="setRating(2)">★</span>
+                    <span class="star" onclick="setRating(3)">★</span>
+                    <span class="star" onclick="setRating(4)">★</span>
+                    <span class="star" onclick="setRating(5)">★</span>
+                </div>
+    
+                <label for="question1">Question 1: Did the website provide clear and concise information about the available vaccines, their efficacy, and any potential side effects? </label>
+                <textarea id="question1" name="question1" rows="4" required></textarea>
+    
+                <label for="question2">Question 2: How user-friendly did you find the vaccination website?</label>
+                <textarea id="question2" name="question2" rows="4" required></textarea>
+    
+                <label for="question3">Question 3: How satisfied are you with the online appointment booking process?</label>
+                <textarea id="question3" name="question3" rows="4" required></textarea>
+    
+                <label for="question4">Question 4:Were there any technical issues or bugs that you encountered while using the website? </label>
+                <textarea id="question4" name="question4" rows="4" required></textarea>
+    
+                <label for="question5">Give a message !!!</label>
+                <textarea id="question5" name="question5" rows="4" required></textarea>
+    
+                <button type="button" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    
+        <!-- Popup -->
+        <div class="popup" id="thankYouPopup">
+            <p>Thank you for your feedback!</p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+        
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    
+        <script>
+            function setRating(rating) {
+                // Reset all stars to empty
+                document.querySelectorAll('.star').forEach(star => star.textContent = '☆');
+                
+                // Fill stars up to the selected rating
+                for (let i = 1; i <= rating; i++) {
+                    document.querySelector(`.star:nth-child(${i})`).textContent = '★';
+                }
+            }
+    
+            function submitForm() {
+                // Assuming you want to validate the form before showing the popup
+                // Add your form validation logic here
+    
+                // Show the popup
+                document.getElementById('thankYouPopup').style.display = 'block';
+                document.getElementById('overlay').style.display = 'block';
+            }
+    
+            function closePopup() {
+                // Close the popup
+                document.getElementById('thankYouPopup').style.display = 'none';
+                document.getElementById('overlay').style.display = 'none';
+            }
+        </script>
+    </div>
+
+</body>
+</html>

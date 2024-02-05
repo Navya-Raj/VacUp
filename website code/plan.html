@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Recommendations</title>
+    <link rel="stylesheet" href="plan.css">
+</head>
+<body>
+
+    <nav class="navbar-top">
+        <div class="logo">
+            <a href="index.html">
+                <div class="brandname title"></div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="plan.html">Our Recomendation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+<section class="container">
+    <h2 class="section-heading">Dealing with Smog: Your Health Matters</h2>
+
+    <h4 class="abc">In the midst of heavy smog in Delhi, prioritize your health with the following recommendations:</h4>
+
+    <div class="recommendations">
+        <h3>Vaccines</h3>
+        <ul>
+            <li>
+                <strong>Influenza Vaccine:</strong> Guards against respiratory infections.
+                <button onclick="scheduleAppointment('Influenza Vaccine')">Schedule Appointment</button>
+            </li>
+            <li>
+                <strong>Pneumococcal Vaccine:</strong> Provides defense against certain bacterial lung infections.
+                <button onclick="scheduleAppointment('Pneumococcal Vaccine')">Schedule Appointment</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="recommendations">
+        <h3>Checkups</h3>
+        <ul>
+            <li>
+                <strong>Pulmonary Function Tests (PFT):</strong> Measures lung capacity and function.
+                <button onclick="scheduleAppointment('Pulmonary Function Tests')">Schedule Appointment</button>
+            </li>
+            <li>
+                <strong>Chest X-ray:</strong> Checks for abnormalities in the lungs.
+                <button onclick="scheduleAppointment('Chest X-ray')">Schedule Appointment</button>
+            </li>
+            <li>
+                <strong>Blood Tests:</strong> Assesses oxygen levels and relevant indicators.
+                <button onclick="scheduleAppointment('Blood Tests')">Schedule Appointment</button>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<script>
+    function scheduleAppointment() {
+    window.location.href = 'appointment.html';
+}
+</script>
+</body>
+</html>

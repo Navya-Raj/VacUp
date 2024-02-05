@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VacUp</title>
+    <link rel="stylesheet" href="profile.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Add any additional styles or scripts here -->
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar-top">
+        <div class="logo">
+            <a href="index.html">
+                <div class="brandname title"></div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="plan.html">Our Recomendation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Sidenav -->
+    <div class="abc">
+    <div class="sidenav">
+        <div class="profile">
+            <i class='bx bx-user-circle' ></i>            <div class="name">Name: Khushi</div>
+            <div class="job">Age: 18 years</div>
+        </div>
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="#profile" class="active">Profile</a>
+                <hr align="center">
+            </div>
+            <div class="url notif">
+                <a href="#appointments">Notifications   <div class="check-box">
+                    <input type="checkbox">
+                
+                </div></a>
+                
+                <hr align="center">
+             
+            </div>
+            <div class="url">
+                <a href="feed.html">Feedback</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="#reminders">Change Language</a>
+                <hr align="center">
+            </div>
+            <div class="url">
+                <a href="index.html">Log out</a>
+                <hr align="center">
+            </div>
+            <!-- Add more sidenav links as needed -->
+        </div>
+    </div>
+    <!-- End Sidenav -->
+
+    <!-- Main Content -->
+    <div class="main">
+        <h2>USER PROFILE</h2>
+        <div class="card">
+            <div class="card-body">
+                <i class="fa fa-pen fa-xs edit"></i>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Name</td>
+                            <td>:</td>
+                            <td>Khushi</td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>:</td>
+                            <td>Female</td>
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td>:</td>
+                            <td>18 years</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>:</td>
+                            <td>khushi@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>:</td>
+                            <td>New Delhi, India</td>
+                        </tr>
+                        <!-- Add more user profile information as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <h2>UPCOMING APPOINTMENTS</h2>
+    <div class="card" id="appointments">
+        <div class="card-body">
+            <i class="fa fa-calendar fa-xs edit"></i>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Disease</td>
+                        <td>:</td>
+                        <td>COVID-19 Vaccination</td>
+                    </tr>
+                    <tr>
+                        <td>Date</td>
+                        <td>:</td>
+                        <td>
+                            <div id="calendar">
+                                <!-- Calendar HTML content -->
+                                <div class="calendar-month">
+                                    <span class="calendar-prev" onclick="prevMonth()">&#9664;</span>
+                                    <span class="calendar-current-month">February 2024</span>
+                                    <span class="calendar-next" onclick="nextMonth()">&#9654;</span>
+                                </div>
+                                <table class="calendar-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Sun</th>
+                                            <th>Mon</th>
+                                            <th>Tue</th>
+                                            <th>Wed</th>
+                                            <th>Thu</th>
+                                            <th>Fri</th>
+                                            <th>Sat</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="calendar-body">
+                                        <!-- Calendar body will be populated dynamically with JavaScript -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td>:</td>
+                        <td>10:00 AM</td>
+                    </tr>
+
+     
+                        <!-- Add more upcoming appointments as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- ... previous HTML code ... -->
+
+<!-- ... previous HTML code ... -->
+
+<h2>REMINDERS</h2>
+<div class="card" id="camps">
+    <div class="card-body">
+        <i class="fa fa-calendar fa-xs edit"></i>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Camp Name</td>
+                    <td>:</td>
+                    <td>Camp at Mohalla Clinic</td>
+                </tr>
+                <tr>
+                    <td>Date</td>
+                    <td>:</td>
+                    <td>10 FEBRUARY 2024</td>
+                </tr>
+                <tr>
+                    <td>Time</td>
+                    <td>:</td>
+                    <td>9:00 AM - 3:00 PM</td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>:</td>
+                    <td>
+                        <div id="campMap">
+                            <!-- Add your map image here -->
+                            <img src="mohallaclinic.jpeg" alt="Camp Map">
+                        </div>
+                    </td>
+                </tr>
+                <!-- Add more upcoming camps as needed -->
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+<!-- ... remaining HTML code ... -->
+<script src="profile.js"></script>
+
+</body>
+</html>

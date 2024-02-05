@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find medical camps nearby</title>
+    <link rel="stylesheet" href="camp.css">
+</head>
+
+<body>
+    <nav class="navbar-top">
+        <div class="logo">
+            <a href="index.html">
+                <div class="brandname title"></div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="plan.html">Our Recomendation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <!-- Pincode Section -->
+    <div id="pincode-section">
+        <h1>Find medical camps nearby</h1>
+        <p>Enter your pincode to find the nearest camps:</p>
+        <input type="text" id="pincode">
+        <button id="go">Go</button>
+    </div>
+
+    <!-- Main Content (Initially Hidden) -->
+    <div id="main-content" class="main" style="display: none;">
+        <div class="card">
+            <h2>Camp at Mohalla Clinic</h2>
+            <div class="card-body">
+                <i class="fa fa-calendar fa-xs edit"></i>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Date</td>
+                            <td>:</td>
+                            <td>4 February 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Timing</td>
+                            <td>:</td>
+                            <td>10 am - 1 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Cost</td>
+                            <td>:</td>
+                            <td>Free</td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>:</td>
+                            <td>Vaccination and basic check-up for senior citizens</td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td>:</td>
+                            <td>
+                                <div class="campMap">
+                                    <!-- Add your map image here -->
+                                    <img src="mohallaclinic.jpeg" width="400px" height="400px" alt="Camp Map">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="reminder-section">
+                <label for="reminder-slider">Turn Notifications Off/On:</label>
+                <input type="range" min="0" max="1" value="1" id="reminder-slider">
+                <button id="set-reminder">Set Reminder</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Anganwadi Camp</h2>
+
+            <div class="card-body">
+                <i class="fa fa-calendar fa-xs edit"></i>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Date</td>
+                            <td>:</td>
+                            <td>7 February 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Timing</td>
+                            <td>:</td>
+                            <td>11 am - 2 pm</td>
+                        </tr>
+                        <tr>
+                            <td>Cost </td>
+                            <td>:</td>
+                            <td>free</td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>:</td>
+                            <td>Vaccination for children below 14 years</td>
+                        </tr>
+                        <tr>
+                            <td>Location</td>
+                            <td>:</td>
+                            <td>
+                                <div class="campMap">
+                                    <!-- Add your map image here -->
+                                    <img src="anganvadi.jpeg" width="400px" height="400px" alt="Camp Map">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="reminder-section">
+                <label for="reminder-slider">Turn Notifications Off/On:</label>
+                <input type="range" min="0" max="1" value="1" id="reminder-slider">
+                <button id="set-reminder">Set Reminder</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="camp.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Records</title>
+    <link rel="stylesheet" href="record.css" />
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <div class="brandname"></div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="plan.html">Our Recomendation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Health Records</h1>
+    </header>
+
+    <section>
+        <h2>Add Vaccination Record</h2>
+        <form>
+            <label for="patientName">Patient Name:</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="patientnumber">Patient Number:</label>
+            <input type="text" id="patientnumber" name="patientnumber" required>
+            <label for="vaccinationname">Vaccination Name:</label>
+            <input type="text" id="vaccinationname" name="vaccinationname" required>
+
+
+            <label for="vaccinationDate">Vaccination Date:</label>
+            <input type="date" id="vaccinationDate" name="vaccinationDate" required>
+
+            <label for="nextDoseDate">Next Dose Date:</label>
+            <input type="date" id="nextDoseDate" name="nextDoseDate">
+
+            <label for="vaccineLocation">Vaccination Location:</label>
+            <input type="text" id="vaccineLocation" name="vaccineLocation">
+
+            <button type="submit">Add Record</button>
+        </form>
+        
+    </section>
+    <div id="popup">
+        <p>Your record has been successfully submitted!</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+
+    <!-- Overlay to cover the entire page when the popup is open -->
+    <div id="overlay"></div>
+
+    <script src="record.js"></script>
+
+</body>
+</html>

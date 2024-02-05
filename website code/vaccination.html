@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaccination</title>
+    <link rel="stylesheet" href="vaccination.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <div class="brandname"></div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="plan.html">Our Recomendation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+        <div class="page-title">
+            <h2>Vaccination</h2>
+            <p>Ensuring immunity for a healthier tomorrow</p>
+        </div>
+        <div class="main-top">
+            <div class="main-filter">
+                <span>Find by Age</span>
+                <select id="infoDropdown" onchange="displayInfo()">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="option1">19-26 Years</option>
+                    <option value="option2">27-49 Years</option>
+                    <option value="option3">50-64 Years</option>
+                    <option value="option4">65 Years and Older</option>
+                </select>
+            </div>
+            <div class="main-filter">
+                <span>Find by Life Events, Job, and Travel</span>
+                <select id="infoDropdown" onchange="displayInfo()">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="option5">Pregnancy</option>
+                    <option value="option6">Healthcare Workers</option>
+                    <option value="option7">International Travelers</option>
+                    <option value="option8">Immigrants, Refugees, International Adoptions</option>
+                </select>
+            </div>
+            <div class="main-filter">
+                <span>Find by Health Condition</span>
+                <select id="infoDropdown" onchange="displayInfo()">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="option9">Asplenia</option>
+                    <option value="option10">Diabetes Type 1 and  2</option>
+                    <option value="option11">Heart Disease, Stroke or Other Cardiovascular Disease</option>
+                    <option value="option12">HIV</option>
+                    <option value="option13">Liver Disease</option>
+                    <option value="option14">Lung Disease</option>
+                    <option value="option15">End Stage Renal Disease</option>
+                    <option value="option16">Weakened Immune Function</option>
+                </select>
+            </div>
+        </div>
+        <div class="container">
+            <h2>Suggested Vaccines</h2>
+            <div id="selectedInfo"></div>
+        </div>
+        <button onclick="scheduleAppointment('Pneumococcal Vaccine')">Schedule Appointment</button>
+    </div>
+    <!-- Container to display info -->
+    <footer>
+        © 2024 vacup.com | All rights reserved<br/>
+        <div class="socials">
+            <a href=""><i class='bx bxl-github' ></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href=""><i class='bx bxl-discord-alt'></i></a>
+            <a href=""><i class='bx bxl-slack'></i></a>
+        </div>
+    </footer>
+
+    <script src="vaccination.js"></script>
+</body>
+</html>

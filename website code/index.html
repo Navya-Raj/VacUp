@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VacUp</title>
+    <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <div class="brandname"></div>
+            </a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="plan.html">Our Recomendation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+    <div class="3d">
+        <iframe src='https://my.spline.design/untitled-b35d1fdf55afd0c168a7aa96970493cc/' frameborder='0' allowfullscreen="true"></iframe>
+    </div>
+    <div class="hero">
+        <h1>VacUp</h1>
+        <p>Navigating Health, Empowering Lives</p>
+        <button onclick="gotoLogin()" id="cta">Join Us Now</button>
+    </div>
+    <div class="break">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="message">
+        <i class='bx bxs-quote-alt-left' ></i>
+        <p>Effortlessly weaving healthcare into your lifestyle for a vibrant today and a protected tomorrow.<br>Your well-being, our commitment.</p>
+        <i class='bx bxs-quote-alt-right' ></i>
+    </div>
+    <div class="break">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+      <!-- Feature Section -->
+    <div id="services">
+        <div class="feature-heading">
+            <h2>Our Services</h2>
+        </div>
+        <div class="feature-section">
+            <div class="feature-card">
+                <i class='bx bx-health' ></i>
+                <a href="camp.html">
+                    <h2>Find Nearby Checkup Camps</h2>
+                <p>Discover and attend checkup camps conveniently in your area.</p>
+                </a>
+            </div>
+    
+            <div class="feature-card">
+                <i class='bx bxs-injection' ></i>
+                <a href="vaccination.html">
+                    <h2>Vaccination</h2>
+                <p>Check and schedule vaccinations according to age for you and your family.</p>
+                </a>
+            </div>
+    
+            <div class="feature-card">
+                <i class='bx bxs-calendar-plus' ></i>
+                <a href="appointment.html">
+                    <h2>Schedule Appointments</h2>
+                <p>Book appointments with healthcare professionals effortlessly.</p>
+                </a>
+            </div>
+
+            <span>Wait, There's More</span>
+    
+            <div class="feature-card">
+                <i class='bx bxs-file-archive' ></i>
+                <a href="record.html">
+                    <h2>Health Records</h2>
+                <p>Securely manage and access personal health records.</p>
+                </a>
+            </div>
+    
+            <div class="feature-card">
+                <i class='bx bxs-chat' ></i>
+                <a href="">
+                    <h2>Virtual Consultations</h2>
+                <p>Connect with healthcare professionals through telemedicine.</p>
+                </a>
+            </div>
+    
+            <div class="feature-card">
+                <i class='bx bxs-group'></i>
+                <a href="">
+                    <h2>Family Health Management</h2>
+                <p>Simplify healthcare management for the whole family.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="break">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <div class="whyus">
+        <h2>What Sets Us Apart?</h2>
+        <div id="cards">
+            <div class="card c1">
+                        <h2>Empathetic</h2>
+                        <p>Understanding the significance of health and well-being in everyone's lives.</p>
+            </div>
+            <div class="card c2">
+                        <h2>Accessible</h2>
+                        <p>Providing a user-friendly platform for individuals of all ages and backgrounds.</p>
+            </div>
+            <div class="card c3">
+                        <h2>Trust worthy</h2>
+                        <p>Ensuring reliability and precision in healthcare information and services.</p>
+            </div>
+            <div class="card c4">
+                        <h2>Educational</h2>
+                        <p>Empowering users with knowledge about health and wellness.</p>
+            </div>
+        </div>
+    </div>
+    <div class="break">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <div class="information-section">
+        <button id="btn1"><a href="https://www.who.int/news-room/questions-and-answers/item/vaccines-and-immunization-what-is-vaccination">What Are Vaccines?</a> </button>
+        <button id="btn2"><a href="https://code-medical-ethics.ama-assn.org/ethics-opinions/defining-basic-health-care">What's Healthcare?</a></button>
+        <button id="btn3"><a href="https://www.mediversal.in/a-guide-to-emergency-care-what-to-do-in-medical-emergencies/#:~:text=Emergency%20care%20refers%20to%20immediate,reaching%20out%20to%20the%20hospital.">Emergency Services</a></button>
+    </div>
+
+    <footer>
+        © 2024 vacup.com | All rights reserved<br/>
+        <div class="socials">
+            <a href=""><i class='bx bxl-github' ></i></a>
+            <a href=""><i class='bx bxl-linkedin'></i></a>
+            <a href=""><i class='bx bxl-discord-alt'></i></a>
+            <a href=""><i class='bx bxl-slack'></i></a>
+        </div>
+    </footer>
+
+    <script>
+        let currentPage = 1;
+        function nextPage() {
+            const question = document.querySelector('.question');
+            currentPage++;
+            question.style.transform = `translateX(-${currentPage - 1}00%)`;
+        }
+        function gotoLogin() {
+            window.location.href = 'login.html';
+        }
+    </script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <script src="https://mediafiles.botpress.cloud/a864bc67-3ae3-46d9-8c63-d34224e4f80a/webchat/config.js" defer></script>
+    
+</body>
+</html>
