@@ -30,7 +30,7 @@ Welcome to VacUp - your proactive healthcare companion! VacUp is a comprehensive
 7. **Emergency Services Locator:** Find nearby hospitals, pharmacies, and clinics.
 8. **Health Education Resources:** Informative content to educate users about vaccinations and overall health.
 
-##Technology Stack##
+## Technology Stack
 
 VacUp is built using the following technologies:
 
