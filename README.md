@@ -11,7 +11,6 @@ VacUp is your proactive healthcare companion, dedicated to ensuring accessible a
 - [Technology Stack](#technology-stack)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [License](#license)
 
 ## About
 
@@ -55,7 +54,3 @@ To get started with VacUp, follow these simple steps:
 ## Usage
 
 Explore the VacUp app to manage your health journey effectively. Leverage features like health records integration, push notifications, telemedicine consultations, family accounts, community forums, health analytics, and more.
-
-## License
-
-VacUp is licensed under the [MIT License](LICENSE).
